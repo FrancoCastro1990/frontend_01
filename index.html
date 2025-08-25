@@ -3,58 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameZone - Tienda de Videojuegos</title>
+    <meta name="description" content="GameZone - La mejor tienda de videojuegos online con los últimos lanzamientos, mejores precios y envío gratis. FIFA, Zelda, Call of Duty y más.">
+    <meta name="keywords" content="videojuegos, gaming, tienda online, FIFA, Zelda, Call of Duty, PlayStation, Xbox, Nintendo">
+    <meta name="author" content="Franco Castro">
+    <meta property="og:title" content="GameZone - Tienda de Videojuegos">
+    <meta property="og:description" content="Tu tienda favorita de videojuegos con las últimas novedades y los mejores precios">
+    <meta property="og:type" content="website">
+    <title>GameZone - Tienda de Videojuegos | Los Mejores Precios Online</title>
+    <link rel="stylesheet" href="assets/styles.css" type="text/css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
 </head>
 <body>
     <!-- Cabecera del sitio -->
-    <header>
-        <h1>GameZone</h1>
-        <p>Tu tienda favorita de videojuegos con las últimas novedades y los mejores precios</p>
+    <header id="inicio" class="site-header">
+        <h1 class="header-title">🎮 GameZone</h1>
+        <p class="header-subtitle">Tu tienda favorita de videojuegos con las últimas novedades y los mejores precios</p>
     </header>
 
     <!-- Menú de navegación -->
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+    <nav id="main-navigation" class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="#productos" class="nav-link">Productos</a></li>
+            <li class="nav-item"><a href="#ofertas" class="nav-link">Ofertas</a></li>
+            <li class="nav-item"><a href="#sobre-nosotros" class="nav-link">Sobre Nosotros</a></li>
+            <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
         </ul>
     </nav>
 
-    <!-- Sección principal -->
-    <section id="productos">
-        <h2>Productos Destacados</h2>
-        
-        <article>
-            <h3>FIFA 23</h3>
-            <img src="assets/fifa.jpeg" alt="Portada del juego FIFA 23" width="200">
-            <p>El último título de la saga de fútbol más popular con gráficos mejorados y nuevos modos de juego.</p>
-        </article>
-        
-        <article>
-            <h3>The Legend of Zelda: Tears of the Kingdom</h3>
-            <img src="assets/zelda.jpg" alt="Portada del juego Zelda Tears of the Kingdom" width="200">
-            <p>La esperada secuela de Breath of the Wild con un mundo abierto aún más grande y misterioso.</p>
-        </article>
-        
-        <article>
-            <h3>Call of Duty: Modern Warfare II</h3>
-            <img src="assets/cod.jpg" alt="Portada del juego Call of Duty MW2" width="200">
-            <p>Regresa la franquicia más exitosa de shooters con una campaña emocionante y multijugador intenso.</p>
-        </article>
-    </section>
+    <!-- Contenido principal -->
+    <main id="main-content" class="container">
+        <!-- Sección Hero -->
+        <section class="hero-section">
+            <h2 class="hero-title">¡Bienvenido a GameZone!</h2>
+            <p class="hero-description">Descubre los videojuegos más emocionantes con ofertas increíbles y envío gratis</p>
+            <a href="#productos" class="btn btn-primary cta-button">Ver Productos</a>
+        </section>
+
+        <!-- Sección de productos destacados -->
+        <section id="productos" class="products-section">
+            <h2 class="section-title">Productos Destacados</h2>
+            
+            <div class="productos-grid product-grid">
+                <article class="product-card card-fifa">
+                    <span class="descuento discount-badge">-20% OFF</span>
+                    <h3 class="product-title">FIFA 23</h3>
+                    <img src="assets/fifa.jpeg" alt="Portada del juego FIFA 23 - Simulador de fútbol" loading="lazy" class="product-image">
+                    <div class="rating product-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="product-description">El último título de la saga de fútbol más popular con gráficos mejorados, nuevos modos de juego y la mejor experiencia de simulación deportiva.</p>
+                    <p class="precio product-price">$39.990</p>
+                    <a href="#" class="btn btn-secondary add-to-cart">Agregar al Carrito</a>
+                </article>
+                
+                <article class="product-card card-zelda">
+                    <span class="descuento new-badge">NUEVO</span>
+                    <h3 class="product-title">The Legend of Zelda: Tears of the Kingdom</h3>
+                    <img src="assets/zelda.jpg" alt="Portada del juego Zelda Tears of the Kingdom - Aventura épica" loading="lazy" class="product-image">
+                    <div class="rating product-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="product-description">La esperada secuela de Breath of the Wild con un mundo abierto aún más grande y misterioso. Explora los cielos de Hyrule en esta aventura épica.</p>
+                    <p class="precio product-price">$59.990</p>
+                    <a href="#" class="btn btn-secondary add-to-cart">Agregar al Carrito</a>
+                </article>
+                
+                <article class="product-card card-cod">
+                    <span class="descuento discount-badge">-15% OFF</span>
+                    <h3 class="product-title">Call of Duty: Modern Warfare II</h3>
+                    <img src="assets/cod.jpg" alt="Portada del juego Call of Duty MW2 - Shooter militar" loading="lazy" class="product-image">
+                    <div class="rating product-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="product-description">Regresa la franquicia más exitosa de shooters con una campaña emocionante, multijugador intenso y los mejores gráficos de la serie.</p>
+                    <p class="precio product-price">$49.990</p>
+                    <a href="#" class="btn btn-secondary add-to-cart">Agregar al Carrito</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de ofertas especiales -->
+        <section id="ofertas" class="offers-section">
+            <h2 class="section-title">Ofertas Especiales</h2>
+            <div class="hero weekly-offer" id="weekly-offer">
+                <h3 class="offer-title">🔥 Oferta de la Semana</h3>
+                <p class="offer-description">¡Hasta 50% de descuento en juegos seleccionados!</p>
+                <p class="offer-validity">Válido hasta el 31 de agosto de 2025</p>
+                <a href="#productos" class="btn btn-primary">Ver Ofertas</a>
+            </div>
+        </section>
+
+        <!-- Sección sobre nosotros -->
+        <section id="sobre-nosotros" class="about-section">
+            <h2 class="section-title">Sobre Nosotros</h2>
+            <div class="about-content">
+                <p class="about-text primary-text">
+                    En GameZone somos apasionados por los videojuegos. Desde 2020, nos hemos dedicado a ofrecer 
+                    la mejor selección de títulos para todas las plataformas: PlayStation, Xbox, Nintendo Switch y PC.
+                </p>
+                <p class="about-text secondary-text">
+                    Nuestro compromiso es brindar la mejor experiencia de compra con precios competitivos, 
+                    envío rápido y atención al cliente excepcional. ¡Tu próxima aventura gaming te está esperando!
+                </p>
+            </div>
+        </section>
+    </main>
 
     <!-- Pie de página -->
-    <footer id="contacto">
-        <h3>Contacto</h3>
-        <p>Dirección: Calle de los Videojuegos 123, Santiago</p>
-        <p>Teléfono: +56 9 8765 4321</p>
-        <p>Email: contacto@gamezone.cl</p>
-        <p>Síguenos en: 
-            <a href="https://facebook.com/gamezone" target="_blank">Facebook</a> | 
-            <a href="https://twitter.com/gamezone" target="_blank">Twitter</a> | 
-            <a href="https://instagram.com/gamezone" target="_blank">Instagram</a>
-        </p>
+    <footer id="contacto" class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section contact-info">
+                <h3 class="footer-title">📍 Información de Contacto</h3>
+                <p class="footer-text"><strong>Dirección:</strong> Calle de los Videojuegos 123, Santiago, Chile</p>
+                <p class="footer-text"><strong>Teléfono:</strong> <a href="tel:+56987654321" class="footer-link">+56 9 8765 4321</a></p>
+                <p class="footer-text"><strong>Email:</strong> <a href="mailto:contacto@gamezone.cl" class="footer-link">contacto@gamezone.cl</a></p>
+                <p class="footer-text"><strong>Horario:</strong> Lunes a Viernes 9:00 - 20:00</p>
+            </div>
+            
+            <div class="footer-section services-info">
+                <h3 class="footer-title">🛍️ Servicios</h3>
+                <p class="footer-text service-item">✅ Envío gratis en compras sobre $30.000</p>
+                <p class="footer-text service-item">✅ Garantía en todos nuestros productos</p>
+                <p class="footer-text service-item">✅ Soporte técnico especializado</p>
+                <p class="footer-text service-item">✅ Cambios y devoluciones fáciles</p>
+            </div>
+            
+            <div class="footer-section platforms-info">
+                <h3 class="footer-title">🎮 Plataformas</h3>
+                <p class="footer-text platform-item">• PlayStation 5 / PS4</p>
+                <p class="footer-text platform-item">• Xbox Series X|S / Xbox One</p>
+                <p class="footer-text platform-item">• Nintendo Switch</p>
+                <p class="footer-text platform-item">• PC / Steam</p>
+            </div>
+            
+            <div class="footer-section social-section">
+                <h3 class="footer-title">🌐 Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://facebook.com/gamezone" target="_blank" aria-label="Facebook" class="social-link facebook-link">📘</a>
+                    <a href="https://twitter.com/gamezone" target="_blank" aria-label="Twitter" class="social-link twitter-link">🐦</a>
+                    <a href="https://instagram.com/gamezone" target="_blank" aria-label="Instagram" class="social-link instagram-link">📷</a>
+                    <a href="https://youtube.com/gamezone" target="_blank" aria-label="YouTube" class="social-link youtube-link">📺</a>
+                </div>
+                <p class="social-message">¡Mantente al día con las últimas novedades!</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2025 GameZone Chile. Todos los derechos reservados.</p>
+            <p class="developer-credit">Desarrollado por Franco Castro - PFY2201</p>
+        </div>
     </footer>
 </body>
 </html>
